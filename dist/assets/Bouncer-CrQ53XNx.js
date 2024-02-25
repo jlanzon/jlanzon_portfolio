@@ -1,7 +1,0 @@
-import{t as b,J as u,_ as v,K as m}from"./index-CfC3QUvt.js";import{Bounce as l}from"./index-CyGqzRbp.js";import{E as _}from"./ExternalInteractorBase-CIi3zRdK.js";const i="bounce";class y extends _{constructor(e){super(e)}clear(){}init(){const e=this.container,t=e.actualOptions.interactivity.modes.bounce;t&&(e.retina.bounceModeDistance=t.distance*e.retina.pixelRatio)}async interact(){const e=this.container,t=e.actualOptions,n=t.interactivity.events,s=e.interactivity.status===b,o=n.onHover.enable,a=n.onHover.mode,d=n.onDiv;if(s&&o&&u(i,a)){const{mouseBounce:r}=await v(()=>import("./Utils-Bs_kvPvp.js"),__vite__mapDeps([0,1,2,3]));r(this.container,c=>this.isEnabled(c))}else{const{divBounce:r}=await v(()=>import("./Utils-Bs_kvPvp.js"),__vite__mapDeps([0,1,2,3]));r(this.container,d,i,c=>this.isEnabled(c))}}isEnabled(e){const t=this.container,n=t.actualOptions,s=t.interactivity.mouse,o=((e==null?void 0:e.interactivity)??n.interactivity).events,a=o.onDiv;return!!s.position&&o.onHover.enable&&u(i,o.onHover.mode)||m(i,a)}loadModeOptions(e,...t){e.bounce||(e.bounce=new l);for(const n of t)e.bounce.load(n==null?void 0:n.bounce)}reset(){}}export{y as Bouncer};
-function __vite__mapDeps(indexes) {
-  if (!__vite__mapDeps.viteFileDeps) {
-    __vite__mapDeps.viteFileDeps = ["assets/Utils-Bs_kvPvp.js","assets/index-CfC3QUvt.js","assets/index-VMaD5E-3.css","assets/Ranges-Cr7P48sb.js"]
-  }
-  return indexes.map((i) => __vite__mapDeps.viteFileDeps[i])
-}
