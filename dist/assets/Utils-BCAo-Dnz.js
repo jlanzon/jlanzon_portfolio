@@ -1,0 +1,1 @@
+const t={x:0,y:0};function d(i){const{context:e,particle:s,radius:o}=i,n=s.sides,r=s.starInset??2;e.moveTo(t.x,t.y-o);for(let a=0;a<n;a++)e.rotate(Math.PI/n),e.lineTo(t.x,t.y-o*r),e.rotate(Math.PI/n),e.lineTo(t.x,t.y-o)}export{d as drawStar};
