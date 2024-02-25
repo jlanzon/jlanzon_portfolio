@@ -1,9 +1,7 @@
 import "./App.css";
 import MaxWidthWrapper from "./components/MaxWidthWrapper";
-import Navbar from "./components/Navbar";
 import { Button } from "./components/ui/moving-border";
 import { TextGenerateEffect } from "./components/ui/text-generate-effect";
-import { cn } from "./utils/cn";
 import { BackgroundBeams } from "./components/ui/background-beams";
 
 // cool trick
