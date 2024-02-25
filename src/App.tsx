@@ -3,6 +3,15 @@ import Navbar from "./components/Navbar";
 import { Button } from "./components/ui/moving-border";
 import { TextGenerateEffect } from "./components/ui/text-generate-effect";
 
+// cool trick
+let docTitle = document.title;
+window.addEventListener("blur", () => {
+  document.title = "Come back 😢";
+});
+window.addEventListener("focus", () => {
+  document.title = docTitle;
+});
+
 function App() {
   return (
     <>
@@ -47,7 +56,7 @@ function App() {
             <TextGenerateEffect words="Joseph M Lanzon" />
             <p className="py-6">I am a lead full stack web developer</p>
             <Button
-              borderRadius="1.75rem"
+              borderRadius="2.75rem"
               className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
             >
               Get in Contact
