@@ -1,0 +1,1 @@
+const r=Math.PI*2,o=0,n={x:0,y:0};function t(i){const{context:a,particle:e,radius:l}=i;e.circleRange||(e.circleRange={min:o,max:r});const c=e.circleRange;a.arc(n.x,n.y,l,c.min,c.max,!1)}export{t as drawCircle};

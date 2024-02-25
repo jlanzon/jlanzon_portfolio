@@ -1,0 +1,7 @@
+import{H as _,_ as a,M as x}from"./index-CfC3QUvt.js";const w=2,y=1,F=1;class b{async init(e){const i=e.options,t=i.move.gravity;e.gravity={enable:t.enable,acceleration:_(t.acceleration),inverse:t.inverse};const{initSpin:o}=await a(()=>import("./Utils-BG9Pt9R1.js"),__vite__mapDeps([0,1,2]));o(e),await Promise.resolve()}isEnabled(e){return!e.destroyed&&e.options.move.enable}async move(e,i){var m,d;const t=e.options,o=t.move;if(!o.enable)return;const n=e.container,s=n.retina.pixelRatio;(m=e.retina).moveSpeed??(m.moveSpeed=_(o.speed)*s),(d=e.retina).moveDrift??(d.moveDrift=_(e.options.move.drift)*s);const{getProximitySpeedFactor:p}=await a(()=>import("./Utils-BG9Pt9R1.js"),__vite__mapDeps([0,1,2])),c=p(e),u=e.retina.moveSpeed*n.retina.reduceFactor,f=e.retina.moveDrift,E=x(t.size.value)*s,S=o.size?e.getRadius()/E:y,D=i.factor||F,v=u*S*c*D/w,R=e.retina.maxSpeed??n.retina.maxSpeed;if(o.spin.enable){const{spin:r}=await a(()=>import("./Utils-BG9Pt9R1.js"),__vite__mapDeps([0,1,2]));r(e,v)}else{const{move:r}=await a(()=>import("./Utils-BG9Pt9R1.js"),__vite__mapDeps([0,1,2]));await r(e,o,v,R,f,i)}const{applyDistance:g}=await a(()=>import("./Utils-BG9Pt9R1.js"),__vite__mapDeps([0,1,2]));g(e)}}export{b as BaseMover};
+function __vite__mapDeps(indexes) {
+  if (!__vite__mapDeps.viteFileDeps) {
+    __vite__mapDeps.viteFileDeps = ["assets/Utils-BG9Pt9R1.js","assets/index-CfC3QUvt.js","assets/index-VMaD5E-3.css"]
+  }
+  return indexes.map((i) => __vite__mapDeps.viteFileDeps[i])
+}
