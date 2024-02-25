@@ -1,5 +1,7 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
+import { Button } from "./components/ui/moving-border";
+import { TextGenerateEffect } from "./components/ui/text-generate-effect";
 
 function App() {
   return (
@@ -24,7 +26,7 @@ function App() {
               ></path>
             </g>
           </svg>
-          <svg
+          {/* <svg
             id="visual"
             viewBox="0 0 900 600"
             width="900"
@@ -39,15 +41,17 @@ function App() {
                 fill="black"
               ></path>
             </g>
-          </svg>
+          </svg> */}
           <div>
-            <h1 className="text-5xl font-bold">My name is</h1>
-            <p className="py-6">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
-            </p>
-            <button className="btn btn-primary">Get Started</button>
+            <p>My name is</p>
+            <TextGenerateEffect words="Joseph M Lanzon" />
+            <p className="py-6">I am a lead full stack web developer</p>
+            <Button
+              borderRadius="1.75rem"
+              className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+            >
+              Get in Contact
+            </Button>
           </div>
         </div>
       </div>

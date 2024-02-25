@@ -18,6 +18,7 @@ const DarkModeToggle: React.FC = () => {
   // Effect to apply the theme to the html element and save it to localStorage
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
+    document.documentElement.setAttribute("class", theme);
     localStorage.setItem("theme", theme);
   }, [theme]);
 
