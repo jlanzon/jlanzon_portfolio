@@ -28,7 +28,7 @@ const DarkModeToggle: React.FC = () => {
   };
 
   return (
-    <div className="mr-8">
+    <div>
       <button className="btn" onClick={toggleTheme}>
         {theme === "light" ? (
           <div className="h-6 w-6">

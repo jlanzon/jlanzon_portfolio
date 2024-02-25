@@ -20,7 +20,7 @@ export const TextGenerateEffect = ({
       },
       {
         duration: 2,
-        delay: stagger(0.2),
+        delay: stagger(0.1),
       }
     );
   }, [scope.current]);
@@ -28,14 +28,21 @@ export const TextGenerateEffect = ({
   const renderWords = () => {
     return (
       <motion.div ref={scope}>
-        {wordsArray.map((word, idx) => {
-          return (
+        {wordsArray.map((word, wordIndex) => {
+          const letters = word.split("").map((letter, letterIndex) => (
             <motion.span
-              key={word + idx}
-              className="dark:text-white text-black opacity-0"
+              key={`${wordIndex}-${letterIndex}`}
+              className={cn("dark:text-white text-black opacity-0", className)}
             >
-              {word}{" "}
+              {letter}
             </motion.span>
+          ));
+
+          // Wrap each word in a span and use marginRight for spacing between words
+          return (
+            <span key={wordIndex} style={{ marginRight: "0.5em" }}>
+              {letters}
+            </span>
           );
         })}
       </motion.div>
@@ -43,7 +50,7 @@ export const TextGenerateEffect = ({
   };
 
   return (
-    <div className={cn("font-bold", className)}>
+    <div className={cn("font-bold")}>
       <div className="mt-4">
         <div className=" dark:text-white text-black text-2xl leading-snug tracking-wide">
           {renderWords()}
