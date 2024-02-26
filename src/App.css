@@ -2,3 +2,7 @@
   margin: 0;
   text-align: center;
 }
+
+.flip-horizontal {
+  transform: scaleX(-1);
+}

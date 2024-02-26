@@ -3,6 +3,7 @@ import MaxWidthWrapper from "./components/MaxWidthWrapper";
 import { Button } from "./components/ui/moving-border";
 import { TextGenerateEffect } from "./components/ui/text-generate-effect";
 import { BackgroundBeams } from "./components/ui/background-beams";
+import { Spotlight } from "./components/ui/Spotlight";
 
 // // cool trick
 // let docTitle = document.title;
@@ -16,9 +17,14 @@ import { BackgroundBeams } from "./components/ui/background-beams";
 function App() {
   return (
     <>
-      <div className="min-h-screen w-screen">
+      <div className=" w-full">
         <MaxWidthWrapper className="mb-12 mt-18 sm:mt-20 flex flex-col items-center justify-center text-center">
-          <div className="mx-auto mb-4 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border dark:border-gray-600 border-gray-200 bg-white dark:bg-slate-600 px-7 py-2 shadow-md backdrop-blur transition-all  hover:border-gray-300 hover:bg-white/50">
+          {/* <Spotlight
+            className="xl:-top-80 md:-top-40 left-0 md:left-60 md:-top-30"
+            fill="white"
+          /> */}
+
+          <div className="mx-auto flex max-w-fit items-center justify-center space-x-2 mb-10 mt-10 overflow-hidden rounded-full border dark:border-gray-600 border-gray-200 bg-white dark:bg-slate-600 px-7 py-2 shadow-md backdrop-blur transition-all  hover:border-gray-300 hover:bg-white/50">
             <p className="text-sm font-semibold dark:text-white text-gray-700">
               My portfolio is currently{" "}
               <span className="text-red-600">UNDER CONTRUCTION</span>
