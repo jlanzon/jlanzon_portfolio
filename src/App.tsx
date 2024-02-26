@@ -3,7 +3,7 @@ import MaxWidthWrapper from "./components/MaxWidthWrapper";
 import { Button } from "./components/ui/moving-border";
 import { TextGenerateEffect } from "./components/ui/text-generate-effect";
 import { BackgroundBeams } from "./components/ui/background-beams";
-import { Spotlight } from "./components/ui/Spotlight";
+// import { Spotlight } from "./components/ui/Spotlight";
 
 // // cool trick
 // let docTitle = document.title;
