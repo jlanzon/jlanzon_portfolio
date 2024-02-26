@@ -27,7 +27,7 @@ function App() {
           <div className="mx-auto flex max-w-fit items-center justify-center space-x-2 mb-10 mt-10 overflow-hidden rounded-full border dark:border-gray-600 border-gray-200 bg-white dark:bg-slate-600 px-7 py-2 shadow-md backdrop-blur transition-all  hover:border-gray-300 hover:bg-white/50">
             <p className="text-sm font-semibold dark:text-white text-gray-700">
               My portfolio is currently{" "}
-              <span className="text-red-600">UNDER CONTRUCTION</span>
+              <span className="text-pink-600">UNDER CONTRUCTION</span>
             </p>
           </div>
           <div>
