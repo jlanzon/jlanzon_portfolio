@@ -1,4 +1,3 @@
-import React from "react";
 import MaxWidthWrapper from "../components/MaxWidthWrapper";
 import { Button } from "../components/ui/moving-border";
 import { TextGenerateEffect } from "../components/ui/text-generate-effect";
