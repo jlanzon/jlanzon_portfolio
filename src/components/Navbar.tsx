@@ -19,7 +19,9 @@ export default function Navbar() {
               About
             </Link>
             <span className="text-lg text-gray-400">Projects</span>
-            <span className="text-lg text-gray-400">Contact</span>
+            <Link to="/Contact" className="text-lg hover:blur-[1px]">
+              Contact
+            </Link>{" "}
             <DarkModeToggle />
           </div>
           <div className="sm:hidden flex items-center">
@@ -41,7 +43,9 @@ export default function Navbar() {
               About
             </Link>
             <span className="text-lg text-gray-400">Projects</span>
-            <span className="text-lg text-gray-400">Contact</span>
+            <Link to="/Contact" className="text-lg hover:blur-[1px]">
+              Contact
+            </Link>
 
             <DarkModeToggle />
           </div>

@@ -1,9 +1,18 @@
+import { useRef } from "react";
 import MaxWidthWrapper from "../components/MaxWidthWrapper";
 import { Button } from "../components/ui/moving-border";
 import { TextGenerateEffect } from "../components/ui/text-generate-effect";
 import "./Home.css";
 
 function Home() {
+  const skillsRef = useRef<HTMLDivElement>(null);
+
+  const scrollToNextSection = () => {
+    if (skillsRef.current) {
+      skillsRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <MaxWidthWrapper className="mb-12 mt-18 sm:mt-20 flex flex-col items-center justify-center text-center">
@@ -32,9 +41,9 @@ function Home() {
           <p className="text-lg text-gray-700 dark:text-white">
             Scroll down to see more
           </p>
-          <div className="flex justify-center">
+          <div className="flex justify-center" onClick={scrollToNextSection}>
             <svg
-              className="w-6 h-6 ml-full mr-full text-gray-700 dark:text-white animate-bounce mt-2"
+              className="w-6 h-6 ml-full mr-full text-gray-700 dark:text-white animate-bounce mt-2 cursor-pointer"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -50,13 +59,16 @@ function Home() {
           </div>
         </div>
       </MaxWidthWrapper>
-      <div className="w-full">
+
+      <div className="w-full" ref={skillsRef}>
         <MaxWidthWrapper className="my-12 text-center">
           <h2 className="text-3xl font-bold mb-4">Skills</h2>
           <p className="text-lg mb-8">
             Here are some of the technologies I excel in:
           </p>
           <ul className="flex flex-wrap justify-center space-x-4">
+            <li className="text-lg font-semibold text-blue-600">AI</li>
+            <li className="text-lg font-semibold text-blue-600">LLaMa</li>
             <li className="text-lg font-semibold text-blue-600">JavaScript</li>
             <li className="text-lg font-semibold text-blue-600">React</li>
             <li className="text-lg font-semibold text-blue-600">Node.js</li>
@@ -78,8 +90,6 @@ function Home() {
               <p className="text-lg">
                 Description of the project. It includes ...
               </p>
-              {/* MT-4 makes the button look cool under the blur */}
-
               <Button disabled className="mt-4">
                 View Project
               </Button>
