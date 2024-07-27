@@ -32,21 +32,22 @@ function Home() {
           <p className="text-lg text-gray-700 dark:text-white">
             Scroll down to see more
           </p>
-
-          <svg
-            className="w-6 h-6 ml-full mr-full text-gray-700 dark:text-white animate-bounce mt-2"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M19 9l-7 7-7-7"
-            ></path>
-          </svg>
+          <div className="flex justify-center">
+            <svg
+              className="w-6 h-6 ml-full mr-full text-gray-700 dark:text-white animate-bounce mt-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M19 9l-7 7-7-7"
+              ></path>
+            </svg>
+          </div>
         </div>
       </MaxWidthWrapper>
       <div className="w-full">
