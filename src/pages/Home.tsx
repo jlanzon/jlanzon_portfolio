@@ -60,9 +60,12 @@ function Home() {
         </div>
       </MaxWidthWrapper>
 
-      <div className="w-full" ref={skillsRef}>
+      <div className="w-full mt-32" ref={skillsRef}>
+        {" "}
+        &zwnj;
+        {/* cheaky invis hack  */}
         <MaxWidthWrapper className="my-12 text-center">
-          <h2 className="text-3xl font-bold mb-4">Skills</h2>
+          <h2 className="text-3xl font-bold mb-4 mt-32">Skills</h2>
           <p className="text-lg mb-8">
             Here are some of the technologies I excel in:
           </p>
@@ -78,7 +81,6 @@ function Home() {
             <li className="text-lg font-semibold text-blue-600">Azure</li>
           </ul>
         </MaxWidthWrapper>
-
         <MaxWidthWrapper className="my-12 text-center">
           <h2 className="text-3xl font-bold mb-4">Projects</h2>
           <p className="text-lg mb-8">
@@ -114,7 +116,6 @@ function Home() {
             </div>
           </div>
         </MaxWidthWrapper>
-
         <MaxWidthWrapper className="my-12 text-center">
           <h2 className="text-3xl font-bold mb-4">Experience</h2>
           <p className="text-lg mb-8">
@@ -143,7 +144,6 @@ function Home() {
             </div>
           </div>
         </MaxWidthWrapper>
-
         <MaxWidthWrapper className="my-12 text-center">
           <h2 className="text-3xl font-bold mb-4">Contact</h2>
           <p className="text-lg mb-8">
