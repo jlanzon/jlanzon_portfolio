@@ -8,7 +8,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="sticky h-14 w-screen inset-x-0 top-0 z-30 border-b dark:border-gray-900 border-gray-200 dark:bg-black/25 bg-white/75 backdrop-blur-lg transition-all">
+    <div className="w-[99vw] sticky h-14 inset-x-0 top-0 z-30 border-b dark:border-gray-900 border-gray-200 dark:bg-black/25 bg-white/75 backdrop-blur-lg transition-all">
       <MaxWidthWrapper>
         <div className="flex h-14 items-center justify-between">
           <Link to="/" className="text-xl hover:blur-[2px] ml-2">

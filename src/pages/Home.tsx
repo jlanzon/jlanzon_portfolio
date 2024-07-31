@@ -59,121 +59,128 @@ function Home() {
           </div>
         </div>
       </MaxWidthWrapper>
-
-      <div className="w-full mt-32" ref={skillsRef}>
-        {" "}
-        &zwnj;
-        {/* cheaky invis hack  */}
-        <MaxWidthWrapper className="my-12 text-center">
-          <h2 className="text-3xl font-bold mb-4 mt-32">Skills</h2>
-          <p className="text-lg mb-8">
-            Here are some of the technologies I excel in:
-          </p>
-          <ul className="flex flex-wrap justify-center space-x-4">
-            <li className="text-lg font-semibold text-blue-600">AI</li>
-            <li className="text-lg font-semibold text-blue-600">LLaMa</li>
-            <li className="text-lg font-semibold text-blue-600">JavaScript</li>
-            <li className="text-lg font-semibold text-blue-600">React</li>
-            <li className="text-lg font-semibold text-blue-600">Node.js</li>
-            <li className="text-lg font-semibold text-blue-600">Python</li>
-            <li className="text-lg font-semibold text-blue-600">TypeScript</li>
-            <li className="text-lg font-semibold text-blue-600">Firebase</li>
-            <li className="text-lg font-semibold text-blue-600">Azure</li>
-          </ul>
-        </MaxWidthWrapper>
-        <MaxWidthWrapper className="my-12 text-center">
-          <h2 className="text-3xl font-bold mb-4">Projects</h2>
-          <p className="text-lg mb-8">
-            This projects sections is currently under development:
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 blur-lg">
-            <div className="bg-white dark:bg-slate-600 p-6 rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold mb-2">Project One</h3>
-              <p className="text-lg">
-                Description of the project. It includes ...
-              </p>
-              <Button disabled className="mt-4">
-                View Project
-              </Button>
-            </div>
-            <div className="bg-white dark:bg-slate-600 p-6 rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold mb-2">Project Two</h3>
-              <p className="text-lg">
-                OI - you should not be seeing any of this
-              </p>
-              <Button disabled className="mt-4">
-                View Project
-              </Button>
-            </div>
-            <div className="bg-white dark:bg-slate-600 p-6 rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold mb-2">Project Three</h3>
-              <p className="text-lg">
-                Description of the project. It includes ...
-              </p>
-              <Button disabled className="mt-4">
-                View Project
-              </Button>
-            </div>
-          </div>
-        </MaxWidthWrapper>
-        <MaxWidthWrapper className="my-12 text-center">
-          <h2 className="text-3xl font-bold mb-4">Experience</h2>
-          <p className="text-lg mb-8">
-            A brief overview of my professional experience:
-          </p>
-          <div className="grid grid-cols-1 gap-6">
-            <div className="bg-white dark:bg-slate-600 p-6 rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold mb-2">
-                Lead Software Developer at RAF Coningsby
-              </h3>
-              <p className="text-lg">Nov 2022 – Present</p>
-              <p className="text-lg">
-                Creating bespoke web applications that enhance mission
-                effectiveness ...
-              </p>
-            </div>
-            <div className="bg-white dark:bg-slate-600 p-6 rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold mb-2">
-                Software Developer at BAE Systems Digital Intelligence
-              </h3>
-              <p className="text-lg">June 2023 – October 2023</p>
-              <p className="text-lg">
-                Contributed to design, development, and implementation of
-                software applications ...
-              </p>
-            </div>
-          </div>
-        </MaxWidthWrapper>
-        <MaxWidthWrapper className="my-12 text-center">
-          <h2 className="text-3xl font-bold mb-4">Contact</h2>
-          <p className="text-lg mb-8">
-            Feel free to reach out to me through the following channels:
-          </p>
-          <div className="flex flex-col items-center space-y-4">
-            <p className="text-lg">
-              Email:{" "}
-              <a href="mailto:joelanzon@outlook.com" className="text-blue-600">
-                joelanzon@outlook.com
-              </a>
+      <MaxWidthWrapper>
+        <div className="mt-32" ref={skillsRef}>
+          &zwnj;
+          {/* cheaky invis hack  */}
+          <MaxWidthWrapper className=" text-center">
+            <h2 className="text-3xl font-bold mb-4 mt-32">Skills</h2>
+            <p className="text-lg mb-8">
+              Here are some of the technologies I excel in:
             </p>
-            <p className="text-lg">
-              GitHub:{" "}
-              <a href="https://github.com/jlanzon" className="text-blue-600">
-                github.com/jlanzon
-              </a>
+            <ul className="flex flex-wrap justify-center space-x-4">
+              <li className="text-lg font-semibold text-blue-600">AI</li>
+              <li className="text-lg font-semibold text-blue-600">LLaMa</li>
+              <li className="text-lg font-semibold text-blue-600">
+                JavaScript
+              </li>
+              <li className="text-lg font-semibold text-blue-600">React</li>
+              <li className="text-lg font-semibold text-blue-600">Node.js</li>
+              <li className="text-lg font-semibold text-blue-600">Python</li>
+              <li className="text-lg font-semibold text-blue-600">
+                TypeScript
+              </li>
+              <li className="text-lg font-semibold text-blue-600">Firebase</li>
+              <li className="text-lg font-semibold text-blue-600">Azure</li>
+            </ul>
+          </MaxWidthWrapper>
+          <MaxWidthWrapper className="my-12 text-center">
+            <h2 className="text-3xl font-bold mb-4">Projects</h2>
+            <p className="text-lg mb-8">
+              This projects sections is currently under development:
             </p>
-            <p className="text-lg">
-              LinkedIn:{" "}
-              <a
-                href="https://www.linkedin.com/in/joseph-lanzon-541851138/"
-                className="text-blue-600"
-              >
-                LinkedIn Profile
-              </a>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 blur-lg">
+              <div className="bg-white dark:bg-slate-600 p-6 rounded-lg shadow-md">
+                <h3 className="text-2xl font-bold mb-2">Project One</h3>
+                <p className="text-lg">
+                  Description of the project. It includes ...
+                </p>
+                <Button disabled className="mt-4">
+                  View Project
+                </Button>
+              </div>
+              <div className="bg-white dark:bg-slate-600 p-6 rounded-lg shadow-md">
+                <h3 className="text-2xl font-bold mb-2">Project Two</h3>
+                <p className="text-lg">
+                  OI - you should not be seeing any of this
+                </p>
+                <Button disabled className="mt-4">
+                  View Project
+                </Button>
+              </div>
+              <div className="bg-white dark:bg-slate-600 p-6 rounded-lg shadow-md">
+                <h3 className="text-2xl font-bold mb-2">Project Three</h3>
+                <p className="text-lg">
+                  Description of the project. It includes ...
+                </p>
+                <Button disabled className="mt-4">
+                  View Project
+                </Button>
+              </div>
+            </div>
+          </MaxWidthWrapper>
+          <MaxWidthWrapper className="my-12 text-center">
+            <h2 className="text-3xl font-bold mb-4">Experience</h2>
+            <p className="text-lg mb-8">
+              A brief overview of my professional experience:
             </p>
-          </div>
-        </MaxWidthWrapper>
-      </div>
+            <div className="grid grid-cols-1 gap-6">
+              <div className="bg-white dark:bg-slate-600 p-6 rounded-lg shadow-md">
+                <h3 className="text-2xl font-bold mb-2">
+                  Lead Software Developer at RAF Coningsby
+                </h3>
+                <p className="text-lg">Nov 2022 – Present</p>
+                <p className="text-lg">
+                  Creating bespoke web applications that enhance mission
+                  effectiveness ...
+                </p>
+              </div>
+              <div className="bg-white dark:bg-slate-600 p-6 rounded-lg shadow-md">
+                <h3 className="text-2xl font-bold mb-2">
+                  Software Developer at BAE Systems Digital Intelligence
+                </h3>
+                <p className="text-lg">June 2023 – October 2023</p>
+                <p className="text-lg">
+                  Contributed to design, development, and implementation of
+                  software applications ...
+                </p>
+              </div>
+            </div>
+          </MaxWidthWrapper>
+          <MaxWidthWrapper className="my-12 text-center">
+            <h2 className="text-3xl font-bold mb-4">Contact</h2>
+            <p className="text-lg mb-8">
+              Feel free to reach out to me through the following channels:
+            </p>
+            <div className="flex flex-col items-center space-y-4">
+              <p className="text-lg">
+                Email:{" "}
+                <a
+                  href="mailto:joelanzon@outlook.com"
+                  className="text-blue-600"
+                >
+                  joelanzon@outlook.com
+                </a>
+              </p>
+              <p className="text-lg">
+                GitHub:{" "}
+                <a href="https://github.com/jlanzon" className="text-blue-600">
+                  github.com/jlanzon
+                </a>
+              </p>
+              <p className="text-lg">
+                LinkedIn:{" "}
+                <a
+                  href="https://www.linkedin.com/in/joseph-lanzon-541851138/"
+                  className="text-blue-600"
+                >
+                  LinkedIn Profile
+                </a>
+              </p>
+            </div>
+          </MaxWidthWrapper>
+        </div>
+      </MaxWidthWrapper>
     </>
   );
 }

@@ -1,3 +1,4 @@
+import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { useState } from "react";
 
 function Contact() {
@@ -18,7 +19,7 @@ function Contact() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 dark:bg-gray-900 py-12 sm:px-6 lg:px-8">
+    <MaxWidthWrapper className="min-h-screen flex flex-col items-center justify-center bg-gray-50 dark:bg-gray-900 py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <h1 className="text-center text-3xl font-extrabold text-gray-900 dark:text-white">
           Contact Me
@@ -89,7 +90,7 @@ function Contact() {
           </form>
         )}
       </div>
-    </div>
+    </MaxWidthWrapper>
   );
 }
 
