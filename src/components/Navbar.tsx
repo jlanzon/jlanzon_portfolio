@@ -14,7 +14,7 @@ export default function Navbar() {
           <Link to="/" className="text-xl hover:blur-[2px] ml-2">
             JLanzon // Portfolio
           </Link>
-          <div className="hidden sm:flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-4">
             <Link to="/about" className="text-lg hover:blur-[1px]">
               About
             </Link>
@@ -24,7 +24,7 @@ export default function Navbar() {
             </Link>{" "}
             <DarkModeToggle />
           </div>
-          <div className="sm:hidden flex items-center">
+          <div className="md:hidden flex items-center">
             <button
               onClick={() => setMenuOpen(!menuOpen)}
               className="focus:outline-none"
@@ -38,7 +38,7 @@ export default function Navbar() {
           </div>
         </div>
         {menuOpen && (
-          <div className="sm:hidden rounded-lg dark:bg-black/75 bg-white/75  flex flex-col items-center space-y-4 mt-2 transition-all backdrop-blur-lg">
+          <div className="md:hidden rounded-lg dark:bg-black/75 bg-white/75  flex flex-col items-center space-y-4 mt-2 transition-all backdrop-blur-lg">
             <Link to="/about" className="text-lg hover:blur-[1px]">
               About
             </Link>
