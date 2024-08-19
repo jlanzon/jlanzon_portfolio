@@ -7,16 +7,20 @@ import EdanPage from "./pages/edan";
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<h1>404 Not Found</h1>} />
-        <Route path="/edan" element={<EdanPage />} />
-      </Routes>
-    </Router>
+    <>
+      <div className="w-screen">
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<h1>404 Not Found</h1>} />
+            <Route path="/edan" element={<EdanPage />} />
+          </Routes>
+        </Router>
+      </div>
+    </>
   );
 }
 
