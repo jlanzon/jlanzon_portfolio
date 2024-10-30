@@ -18,7 +18,9 @@ export default function Navbar() {
             <Link to="/about" className="text-lg hover:blur-[1px]">
               About
             </Link>
-            <span className="text-lg text-gray-400">Projects</span>
+            <Link to="/redraft" className="text-lg hover:blur-[1px]">
+              Email Drafter
+            </Link>{" "}
             <Link to="/Contact" className="text-lg hover:blur-[1px]">
               Contact
             </Link>{" "}
@@ -42,11 +44,12 @@ export default function Navbar() {
             <Link to="/about" className="text-lg hover:blur-[1px]">
               About
             </Link>
-            <span className="text-lg text-gray-400">Projects</span>
+            <Link to="/redraft" className="text-lg hover:blur-[1px]">
+              Email Drafter
+            </Link>{" "}
             <Link to="/Contact" className="text-lg hover:blur-[1px]">
               Contact
             </Link>
-
             <DarkModeToggle />
           </div>
         )}
