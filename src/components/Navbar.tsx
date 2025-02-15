@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import DarkModeToggle from "./DarkModeToggle";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import DarkModeToggleContainer from "./DarkModeToggle";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,7 +25,7 @@ export default function Navbar() {
             <Link to="/Contact" className="text-lg hover:blur-[1px]">
               Contact
             </Link>{" "}
-            <DarkModeToggle />
+            <DarkModeToggleContainer />
           </div>
           <div className="md:hidden flex items-center">
             <button
@@ -50,7 +51,7 @@ export default function Navbar() {
             <Link to="/Contact" className="text-lg hover:blur-[1px]">
               Contact
             </Link>
-            <DarkModeToggle />
+            <DarkModeToggleContainer />
           </div>
         )}
       </MaxWidthWrapper>
