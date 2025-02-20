@@ -9,7 +9,7 @@ import { Timeline } from "@/components/ui/timeline";
 import "./Home.css";
 
 function Home() {
-  const skillsRef = useRef(null);
+  const skillsRef = useRef<HTMLDivElement>(null);
 
   const scrollToNextSection = () => {
     skillsRef.current?.scrollIntoView({ behavior: "smooth" });

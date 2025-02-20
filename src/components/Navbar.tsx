@@ -99,7 +99,9 @@ const ShiftHightlightTabs = ({ mobile = false }) => {
 };
 
 // Rounded Toggle Button
-const ToggleButton = ({ children, selected, id, path, mobile }) => {
+import { ReactNode } from "react";
+
+const ToggleButton = ({ children, selected, id, path, mobile }: { children: ReactNode, selected: number, id: number, path: string, mobile: boolean }) => {
   return (
     <div
       className={`rounded-xl transition-colors ${
@@ -121,7 +123,7 @@ const ToggleButton = ({ children, selected, id, path, mobile }) => {
 };
 
 // Dark Mode Toggle
-const DarkModeToggle = ({ mode, toggleTheme }) => {
+const DarkModeToggle = ({ mode, toggleTheme }: { mode: string, toggleTheme: () => void }) => {
   return (
     <button
       onClick={toggleTheme}
@@ -139,7 +141,7 @@ const DarkModeToggle = ({ mode, toggleTheme }) => {
 };
 
 // Thumb Component
-const Thumb = ({ mode }) => {
+const Thumb = ({ mode }: { mode: string }) => {
   return (
     <motion.div
       layout
