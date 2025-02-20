@@ -22,8 +22,10 @@
     "clsx": "^2.1.1",
     "cors": "^2.8.5",
     "framer-motion": "^11.11.10",
+    "motion": "^12.4.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^5.5.0",
     "react-router-dom": "^6.25.1",
     "tailwind-merge": "^2.5.4"
   },
