@@ -16,7 +16,6 @@ function Home() {
   };
 
   const timelineData = [
-  const timelineData = [
     {
       title: "Professional Summary",
       content: (
@@ -124,7 +123,6 @@ function Home() {
             My name is
           </motion.h1>
           <TextGenerateEffect
-            className="text-blue-600 dark:text-blue-600 max-w-4xl text-4xl font-bold md:text-5xl lg:text-7xl sm:text-2xl"
             className="text-blue-600 dark:text-blue-600 max-w-4xl text-4xl font-bold md:text-5xl lg:text-7xl sm:text-2xl"
             words="Joseph Lanzon"
           />
