@@ -1,3 +1,4 @@
+"use client";
 import { useRef } from "react";
 import { motion } from "framer-motion";
 import MaxWidthWrapper from "../components/MaxWidthWrapper";
@@ -14,6 +15,7 @@ function Home() {
     skillsRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const timelineData = [
   const timelineData = [
     {
       title: "Professional Summary",
@@ -123,6 +125,7 @@ function Home() {
           </motion.h1>
           <TextGenerateEffect
             className="text-blue-600 dark:text-blue-600 max-w-4xl text-4xl font-bold md:text-5xl lg:text-7xl sm:text-2xl"
+            className="text-blue-600 dark:text-blue-600 max-w-4xl text-4xl font-bold md:text-5xl lg:text-7xl sm:text-2xl"
             words="Joseph Lanzon"
           />
           <motion.p
@@ -165,7 +168,6 @@ function Home() {
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
               </svg>
