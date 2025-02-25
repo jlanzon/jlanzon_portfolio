@@ -71,9 +71,10 @@ export default function Navbar() {
 
 // Tab Data
 const TAB_DATA = [
-  { id: 1, title: "About", path: "/about" },
-  { id: 2, title: "Email Drafter", path: "/redraft" },
-  { id: 3, title: "Contact", path: "/Contact" },
+  { id: 1, title: "Home", path: "/" },
+  { id: 2, title: "About", path: "/about" },
+  { id: 3, title: "Email Drafter", path: "/redraft" },
+  { id: 4, title: "Contact", path: "/Contact" },
 ];
 
 // Tabbed Navigation Component

@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import MaxWidthWrapper from "../components/MaxWidthWrapper";
 import { Button } from "../components/ui/moving-border";
 import { TextGenerateEffect } from "../components/ui/text-generate-effect";
-import { Spotlight } from "@/components/ui/Spotlight";
 import { Timeline } from "@/components/ui/timeline";
 import "./Home.css";
+import { DarkGridHero } from "@/components/Hero";
 
 function Home() {
   const skillsRef = useRef<HTMLDivElement>(null);
@@ -100,7 +100,7 @@ function Home() {
 
   return (
     <>
-      <div className="relative">
+      {/* <div className="relative h-[90vh] ">
         <Spotlight />
         <MaxWidthWrapper className="mb-12 flex flex-col items-center justify-center text-center">
           <motion.div
@@ -172,7 +172,9 @@ function Home() {
             </motion.div>
           </motion.div>
         </MaxWidthWrapper>
-      </div>
+      </div> */}
+
+      <DarkGridHero scrollToNextSection={scrollToNextSection}/>
 
       <motion.div
         initial={{ opacity: 0 }}
