@@ -180,7 +180,7 @@ function Home() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="h-screen my-32"
+        className="my-32"
       >
         <Timeline data={timelineData} />
       </motion.div>
