@@ -1,7 +1,7 @@
 import { MoonIcon, SunIcon } from "@heroicons/react/20/solid";
 import React, { useState, useEffect } from "react";
 
-const DarkModeToggle: React.FC = () => {
+const DarkModeToggle = () => {
   // Initialize theme state based on system preference or localStorage
   const [theme, setTheme] = useState(() => {
     const savedTheme = localStorage.getItem("theme");
