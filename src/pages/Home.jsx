@@ -195,11 +195,6 @@ export default function Home() {
           <span className="absolute top-[20vh] left-[80%] z-0 h-[100] lg:h-[500px] w-[100px] lg:w-[600px] -translate-x-[50%] rounded-full bg-gradient-to-r from-violet-600/20 to-indigo-600/20 blur-3xl" />
           <span className="absolute top-[0vh] left-[100%] z-0 h-[100] lg:h-[500px] w-[100px] lg:w-[600px] -translate-x-[50%] rounded-full bg-gradient-to-r from-violet-600/20 to-indigo-600/20 blur-3xl" />
           <span className="absolute top-[150vh]  left-[10%] z-0 h-[100] lg:h-[500px] w-[100px] lg:w-[600px] -translate-x-[50%] rounded-full bg-gradient-to-r from-blue-600/20 to-indigo-600/20 blur-3xl" />
-          <span className="absolute top-[100vh] left-[70%] z-0 h-[100] lg:h-[300px] w-[100px] lg:w-[600px]  -translate-x-[50%] rounded-full bg-gradient-to-r from-violet-600/20 to-indigo-600/20 blur-3xl" />
-          <span className="absolute top-[150vh] left-[20%] z-0 h-[100] lg:h-[500px] w-[100px] lg:w-[600px] -translate-x-[50%] rounded-full bg-gradient-to-r from-red-600/20 to-green-600/20 blur-3xl" />
-          <span className="absolute top-[200vh] left-[50%] z-0 h-[100] lg:h-[500px] w-[100px] lg:w-[600px] -translate-x-[50%] rounded-full bg-gradient-to-r from-violet-600/20 to-indigo-600/20 blur-3xl" />
-          <span className="absolute top-[230vh] left-[70%] z-0 h-[100] lg:h-[500px] w-[100px] lg:w-[600px] -translate-x-[50%] rounded-full bg-gradient-to-r from-violet-600/20 to-indigo-600/20 blur-3xl" />
-          <span className="absolute top-[280vh] left-[10%] z-0 h-[100] lg:h-[500px] w-[100px] lg:w-[600px] -translate-x-[50%] rounded-full bg-gradient-to-r from-blue-600/20 to-indigo-600/20 blur-3xl" />
         </div>
           <motion.div
             className="md:w-1/2 mt-8 md:mt-0 flex justify-center"
@@ -241,11 +236,10 @@ export default function Home() {
         </div>
       </section>
       <div className="">
-          <span className="absolute top-[100vh] left-[70%] z-0 h-[100] lg:h-[500px] w-[100px] lg:w-[600px] border -translate-x-[50%] rounded-full bg-gradient-to-r from-violet-600/20 to-indigo-600/20 blur-3xl" />
           <span className="absolute top-[150vh] left-[20%] z-0 h-[100] lg:h-[500px] w-[100px] lg:w-[600px] -translate-x-[50%] rounded-full bg-gradient-to-r from-red-600/20 to-green-600/20 blur-3xl" />
           <span className="absolute top-[200vh] left-[50%] z-0 h-[100] lg:h-[500px] w-[100px] lg:w-[600px] -translate-x-[50%] rounded-full bg-gradient-to-r from-violet-600/20 to-indigo-600/20 blur-3xl" />
           <span className="absolute top-[230vh] left-[70%] z-0 h-[100] lg:h-[500px] w-[100px] lg:w-[600px] -translate-x-[50%] rounded-full bg-gradient-to-r from-violet-600/20 to-indigo-600/20 blur-3xl" />
-          {/* <span className="absolute top-[280vh] left-[10%] z-0 h-[100] lg:h-[500px] w-[100px] lg:w-[600px] -translate-x-[50%] rounded-full bg-gradient-to-r from-blue-600/20 to-indigo-600/20 blur-3xl" /> */}
+          <span className="absolute top-[210vh] left-[10%] z-0 h-[100] lg:h-[500px] w-[100px] lg:w-[600px] -translate-x-[50%] rounded-full bg-gradient-to-r from-blue-600/20 to-indigo-600/20 blur-3xl" />
         </div>
       <motion.div
         initial={{ opacity: 0 }}
@@ -352,7 +346,7 @@ export default function Home() {
                 transition={{ duration: 0.5 }}
                 className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md"
               >
-                <h3 className="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Lead AI Developer, KryptoKloud</h3>
+                <h3 className="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Lead Software Developer - KryptoKloud</h3>
                 <p className="text-lg text-gray-700 dark:text-gray-200">Nov 2024 – Present</p>
                 <p className="text-lg text-gray-700 dark:text-gray-200">Driving AI and full-stack development for cybersecurity solutions.</p>
               </motion.div>
@@ -362,7 +356,7 @@ export default function Home() {
                 transition={{ duration: 0.5, delay: 0.1 }}
                 className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md"
               >
-                <h3 className="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Lead Software Developer, RAF Coningsby</h3>
+                <h3 className="text-2xl font-bold mb-2 text-gray-900 dark:text-white">Lead Software Developer - RAF Coningsby</h3>
                 <p className="text-lg text-gray-700 dark:text-gray-200">Nov 2022 – Nov 2024</p>
                 <p className="text-lg text-gray-700 dark:text-gray-200">Led React team and DevSecOps for mission-critical systems.</p>
               </motion.div>
